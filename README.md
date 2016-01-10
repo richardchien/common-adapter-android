@@ -17,7 +17,7 @@ mListView.setAdapter(new CommonAdapter<Bean>(this, mDataList, R.layout.list_item
 });
 ```
 
-###Thanks
+###Reference
 
 [Android-打造万能适配器](http://www.imooc.com/learn/372)
 
