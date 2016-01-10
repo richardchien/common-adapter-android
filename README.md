@@ -1,7 +1,7 @@
 Common Adapter for Android
 =========
 
-A reusable adapter which can be used to load ListView item.
+A reusable adapter inherited from BaseAdapter.
 
 ###Usage
 
