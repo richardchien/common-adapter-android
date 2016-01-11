@@ -1,1 +1,1 @@
-include ':library', ':commonadapter-sample'
+include ':library', ':sample'
