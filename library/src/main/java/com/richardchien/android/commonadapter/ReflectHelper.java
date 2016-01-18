@@ -3,7 +3,7 @@ package com.richardchien.android.commonadapter;
 import java.lang.reflect.Method;
 
 /**
- * CommonAdapterTest
+ * CommonAdapter
  * Created by richard on 16/1/8.
  */
 public class ReflectHelper {

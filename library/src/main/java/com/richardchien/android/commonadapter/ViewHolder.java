@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * CommonAdapterTest
+ * CommonAdapter
  * Created by richard on 16/1/8.
  */
 public class ViewHolder {

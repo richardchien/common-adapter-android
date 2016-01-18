@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import java.util.List;
 
 /**
- * CommonAdapterTest
+ * CommonAdapter
  * Created by richard on 16/1/8.
  */
 public abstract class CommonAdapter<T> extends BaseAdapter {
