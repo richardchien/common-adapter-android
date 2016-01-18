@@ -77,4 +77,14 @@ public class ViewHolder {
         ReflectHelper.invokeMethodIfExists("setOnClickListener", getView(viewId), new Class[]{View.OnClickListener.class}, new Object[]{listener});
         return this;
     }
+
+    public ViewHolder setViewVisibility(int viewId, int visibility) {
+        ReflectHelper.invokeMethodIfExists("setVisibility", getView(viewId), new Class[]{int.class}, new Object[]{visibility});
+        return this;
+    }
+
+    public ViewHolder setViewTextColor(int viewId, int color) {
+        ReflectHelper.invokeMethodIfExists("setTextColor", getView(viewId), new Class[]{int.class}, new Object[]{color});
+        return this;
+    }
 }
