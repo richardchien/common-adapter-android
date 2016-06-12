@@ -4,6 +4,21 @@ A reusable adapter inherited from BaseAdapter.
 
 ## Usage
 
+Add the following to your module's `build.gradle`:
+
+```groovy
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    compile 'com.github.User:Repo:Tag'
+}
+```
+
+Then use it:
+
 ```java
 mListView = (ListView) findViewById(R.id.list_view);
 mListView.setAdapter(new CommonAdapter<Bean>(this, mDataList, R.layout.list_item) {
