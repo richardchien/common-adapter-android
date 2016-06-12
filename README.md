@@ -8,9 +8,10 @@ A reusable adapter inherited from BaseAdapter.
 mListView = (ListView) findViewById(R.id.list_view);
 mListView.setAdapter(new CommonAdapter<Bean>(this, mDataList, R.layout.list_item) {
     @Override
-    public void onPostCreateView(ViewHolder holder, Bean bean) {
+    public void onPostBindViewHolder(ViewHolder holder, Bean bean) {
         holder.setViewText(R.id.text_title, bean.getTitle())
                 .setViewText(R.id.text_description, bean.getDesciption())
+                .setViewProperty(R.id.text_description, "text", bean.getDesciption() + " Changed")
                 .setViewImageResource(R.id.image_view, bean.getImageResId());
     }
 });

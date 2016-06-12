@@ -1,4 +1,4 @@
-package com.richardchien.android.commonadapter;
+package im.r_c.android.commonadapter;
 
 import android.content.Context;
 import android.view.View;
@@ -38,12 +38,11 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
     }
 
     @Override
-//    public abstract View getView(int position, View convertView, ViewGroup parent);
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = ViewHolder.instanceOf(mContext, convertView, parent, mLayoutId, position);
-        onPostCreateView(holder, getItem(position));
+        onPostBindViewHolder(holder, getItem(position));
         return holder.getConvertView();
     }
 
-    public abstract void onPostCreateView(ViewHolder holder, T t);
+    public abstract void onPostBindViewHolder(ViewHolder holder, T t);
 }

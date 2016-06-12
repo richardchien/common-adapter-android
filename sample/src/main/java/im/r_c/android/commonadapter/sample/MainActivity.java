@@ -1,14 +1,15 @@
-package com.richardchien.android.commonadapter.sample;
+package im.r_c.android.commonadapter.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.richardchien.android.commonadapter.CommonAdapter;
-import com.richardchien.android.commonadapter.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import im.r_c.android.commonadapter.CommonAdapter;
+import im.r_c.android.commonadapter.ViewHolder;
 
 public class MainActivity extends AppCompatActivity {
     private ListView mListView;
@@ -24,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.list_view);
         mListView.setAdapter(new CommonAdapter<Bean>(this, mDataList, R.layout.list_item) {
             @Override
-            public void onPostCreateView(ViewHolder holder, Bean bean) {
+            public void onPostBindViewHolder(ViewHolder holder, Bean bean) {
                 holder.setViewText(R.id.text_title, bean.getTitle())
                         .setViewText(R.id.text_description, bean.getDesciption())
+                        .setViewProperty(R.id.text_description, "text", bean.getDesciption() + " Changed")
                         .setViewImageResource(R.id.image_view, bean.getImageResId());
             }
         });

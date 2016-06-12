@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.richardchien.android.commonadapter.sample">
+    package="im.r_c.android.commonadapter.sample">
 
     <application
         android:allowBackup="true"

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.richardchien.android.commonadapter">
+    package="im.r_c.android.commonadapter">
 
     <application
         android:allowBackup="true"
