@@ -12,8 +12,9 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
+
 dependencies {
-    compile 'com.github.User:Repo:Tag'
+    compile 'com.github.richardchien:common-adapter-android:v1.0.0'
 }
 ```
 
