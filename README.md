@@ -1,5 +1,7 @@
 # Common Adapter for Android
 
+[![Release](https://jitpack.io/v/richardchien/common-adapter-android.svg)](https://jitpack.io/#richardchien/common-adapter-android)
+
 A reusable adapter inherited from BaseAdapter.
 
 ## Usage
